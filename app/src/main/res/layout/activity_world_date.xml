@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    tools:context=".WorldDataActivity"
+    android:background="@color/green"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_world_date_swipe_refresh_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_height="wrap_content" android:layout_width="match_parent" app:cardCornerRadius="8dp" app:cardElevation="4dp" android:layout_marginBottom="4dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginLeft="8dp">
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="horizontal" android:padding="10dp" android:weightSum="2">
+
+    <org.eazegraph.lib.charts.PieChart android:layout_height="150dp" android:layout_width="match_parent" android:id="@+id/activity_world_date_piechart" android:padding="4dp" app:egValueTextSize="0dp" app:egLegendHeight="0dp" app:egInnerPaddingColor="#bee3db" app:egDrawValueInPie="true" android:layout_weight="1"/>
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:layout_weight="1" tools:ignore="RtlSymmetry" android:paddingStart="36dp" android:gravity="center_vertical">
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" android:gravity="center_vertical">
+
+    <View android:background="@color/blue_pie" android:layout_height="15dp" android:layout_width="15dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="20sp" android:textColor="#000000" android:text="Active" android:paddingLeft="10dp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" android:gravity="center_vertical">
+
+    <View android:background="@color/green_pie" android:layout_height="15dp" android:layout_width="15dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="20sp" android:textColor="#000000" android:text="Recovered" android:paddingLeft="10dp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="5dp" android:gravity="center_vertical">
+
+    <View android:background="@color/red" android:layout_height="15dp" android:layout_width="15dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="20sp" android:textColor="#000000" android:text="Deaths" android:paddingLeft="10dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+    <GridLayout android:layout_height="match_parent" android:layout_width="match_parent" tools:ignore="UselessParent" android:rowCount="2" android:columnCount="2" android:alignmentMode="alignMargins">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/activity_main_confirmed_card" app:cardCornerRadius="8dp" app:cardElevation="4dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginLeft="8dp" android:layout_columnWeight="1" android:layout_rowWeight="1">
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_confirmed_title_textView" android:layout_marginTop="35dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/yellow" android:text="Confirmed"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_confirmed_textView" android:layout_marginTop="5dp" android:gravity="center" android:textSize="24sp" android:textColor="#fff" android:text=""/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_confirmed_new_textView" android:layout_marginBottom="35dp" android:layout_marginTop="5dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/yellow" android:text=""/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/activity_main_active_card" app:cardCornerRadius="8dp" app:cardElevation="4dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_columnWeight="1" android:layout_rowWeight="1">
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_active_title_textView" android:layout_marginTop="35dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/blue" android:text="Active"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_active_textView" android:layout_marginTop="5dp" android:gravity="center" android:textSize="24sp" android:textColor="#fff" android:text=""/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_active_new_textView" android:layout_marginBottom="35dp" android:layout_marginTop="5dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/blue" android:text=""/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/activity_main_recovered_card" app:cardCornerRadius="8dp" app:cardElevation="4dp" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginLeft="8dp" android:layout_columnWeight="1" android:layout_rowWeight="1">
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_recovered_title_textView" android:layout_marginTop="35dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/green" android:text="Recovered"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_recovered_textView" android:layout_marginTop="5dp" android:gravity="center" android:textSize="24sp" android:textColor="#fff" android:text=""/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_recovered_new_textView" android:layout_marginBottom="35dp" android:layout_marginTop="5dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/green" android:text=""/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/activity_main_death_card" app:cardCornerRadius="8dp" app:cardElevation="4dp" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_columnWeight="1" android:layout_rowWeight="1">
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_death_title_textView" android:layout_marginTop="35dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/red" android:text="Deaths"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_death_textView" android:layout_marginTop="5dp" android:gravity="center" android:textSize="24sp" android:textColor="#fff" android:text=""/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_death_new_textView" android:layout_marginBottom="35dp" android:layout_marginTop="5dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/red" android:text=""/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</GridLayout>
+
+
+    -<androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_main_samples_card" app:cardCornerRadius="8dp" app:cardElevation="4dp" android:layout_marginRight="8dp" android:layout_marginLeft="8dp">
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="25dp" android:gravity="center" android:textSize="20sp" android:textColor="@color/pink" android:text="Total Tests"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_world_date_tests_textView" android:layout_marginBottom="25dp" android:layout_marginTop="5dp" android:gravity="center" android:textSize="24sp" android:textColor="#fff" android:text=""/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/activity_main_statewise_card" app:cardCornerRadius="8dp" app:cardElevation="4dp" android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginLeft="8dp">
+
+
+    <LinearLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_world_date_countrywise_lin"
+        android:orientation="vertical"
+        android:padding="10dp" android:gravity="center"
+        android:focusable="true" android:clickable="true">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" android:gravity="center"
+        android:textSize="20sp" android:textColor="#ff1744"
+        android:text="Country Data"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

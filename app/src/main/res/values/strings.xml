@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">COVIDHELPER</string>
+    <string name="credits">
+    \u2022
+    <b>covid19india.org</b>
+        for India specific API.\n\
+    \u2022
+    <b>Pngimg.com</b>
+        for transparent images</string>
+    <string name="owner_text">Made with ❤ in India\n\nBy Siridi Nath &amp; Dinki Agrawal</string>
+    <string name="Precaution1">Wear Mask While Going Out</string>
+    <string name="Precaution2">Wash Your Hand"'s" Properly With Sanitizer</string>
+    <string name="Precaution3">Maintain Social Distance</string>
+    <string name="pre4">"#"Stay Home &amp; Stay Safe</string>
+</resources>

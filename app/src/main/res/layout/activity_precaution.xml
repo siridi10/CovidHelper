@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:layout_height="match_parent"
+    tools:context=".precaution">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precautions"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/mask" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Precaution1"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/handwash" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Precaution2"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/sd" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Precaution3"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/pre4"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:gravity="center"
+        android:layout_height="150dp"
+        android:layout_width="150dp" android:padding="20dp" android:orientation="vertical" android:background="@drawable/bg_loading">
+
+    <ProgressBar android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textStyle="bold" android:textColor="#fff"
+        android:text="Fetching..." android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>
